@@ -6,6 +6,9 @@ class GarageDoor:
 	RELAY1 = 18
 	ON = 1
 	OFF = 0
+	
+	#Time in seconds to keep the action on.
+	ACTION_TIME = 0.5
 
 	def __init__(self):
 		self.__setup()
@@ -29,5 +32,5 @@ class GarageDoor:
 
 	def __action(self):
 		GPIO.output(self.RELAY1, self.ON)
-		time.sleep(1)
+		time.sleep(ACTION_TIME)
 		GPIO.output(self.RELAY1, self.OFF)
