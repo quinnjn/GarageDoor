@@ -25,11 +25,11 @@ I won't be going through any pre-setup information here. There are way better bl
 
 I found this wonderful video on [how to connect the relay to the pi](https://www.youtube.com/watch?v=Z2B67hybdAA). Definately check it out!
 
-Here are the connections explained in the video:
+Using the video, here are the connections I came up with:
 
 Raspberry Pi  | Relay
 ------------- | -------------
               | Jumper [JD-VCC, VCC]
 5V OUT        | VCC
 GRD           | GRD
-GPIO3         | IN1
+GPIO18        | IN1
