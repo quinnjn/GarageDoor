@@ -20,6 +20,7 @@ class GarageDoor:
 		GPIO.setup(self.RELAY1, GPIO.OUT)
 
 	def cleanup(self):
+		print "GarageDoor::cleanup"
 		GPIO.cleanup()
 
 	def __del__(self):
