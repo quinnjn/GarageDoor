@@ -1,7 +1,13 @@
 GarageDoor
 ==========
 
-Raspberry Pi setup for my Garage door
+Raspberry Pi setup for my Garage door. 
+
+### Purpose
+
+I'm currently renting a basement suite which luckily comes with my own garage. The problem though is it only has one garage door opener which sucks when: I want to go biking, motorcycling, enter the garage myself.
+
+If only there was a way to open my garage door through my cell phone! Now there is!
 
 ### Parts Required
 
