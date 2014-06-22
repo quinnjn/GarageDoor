@@ -13,4 +13,12 @@ If only there was a way to open my garage door through my cell phone! Now there 
 
 1. [Raspberry Pi](http://www.raspberrypi.org/products/)
 2. [Relay Module](http://www.amazon.com/SainSmart-2-CH-2-Channel-Relay-Module/dp/B0057OC6D8/ref=pd_sim_e_5?ie=UTF8&refRID=1M70ZSQT04YCGDHK01KH)
+
+### Pre-Setup
+
+I won't be going through any pre-setup information here. There are way better blogs on setting up the raspberry pi than what I can explain. Although there should be some requirements funfilled before continuing on to the actual garage door operating stuff
+
+1. Raspberry Pi should be connected to the internet
+2. Python should be installed along with the Flask and Rpi.GPIO modules
+
  
