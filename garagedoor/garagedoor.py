@@ -32,5 +32,5 @@ class GarageDoor:
 
 	def __action(self):
 		GPIO.output(self.RELAY1, self.ON)
-		time.sleep(ACTION_TIME)
+		time.sleep(self.ACTION_TIME)
 		GPIO.output(self.RELAY1, self.OFF)
