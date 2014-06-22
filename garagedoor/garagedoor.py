@@ -15,12 +15,15 @@ class GarageDoor:
 		print "GarageDoor:Init"
 
 	def __setup(self):
-		GPIO.cleanup()
+		self.cleanup()
 		GPIO.setmode(GPIO.BCM)
 		GPIO.setup(self.RELAY1, GPIO.OUT)
 
-	def __del__(self):
+	def cleanup(self):
 		GPIO.cleanup()
+
+	def __del__(self):
+		self.cleanup()
 
 	def open(self):
 		self.__action()
