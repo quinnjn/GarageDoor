@@ -1,19 +1,15 @@
-from flask import Flask
+from flask import Flask, render_template, request
 
 from garagedoor import GarageDoor
 
 app = Flask(__name__)
 garageDoor = GarageDoor()
 
-@app.route("/open")
-def openGarage():
-	garageDoor.open()
-	return "open"
-
-@app.route("/close")
-def closeGarage():
-	garageDoor.close()
-	return "close"
+@app.route("/", methods=['POST', 'GET'])
+def index():
+	if request.method == 'POST':
+		garageDoor.open()
+	return render_template('index.html')
 
 if __name__ == "__main__":
 	try:
